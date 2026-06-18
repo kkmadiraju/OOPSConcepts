@@ -7,10 +7,10 @@ namespace OOPSConcepts
         public static void Main(string[] args)
         {
             // Create instances to demonstrate constructors
-            ClassA a1 = new ClassA();
-            ClassA a2 = new ClassA(3, 4);
-            ClassB b = new ClassB();
-            ClassC c = new ClassC();
+            ParentClass a1 = new ParentClass();
+            ParentClass a2 = new ParentClass(3, 4);
+            FirstChild b = new FirstChild();
+            SecondChild c = new SecondChild();
 
             Console.WriteLine("Program finished.");
         }

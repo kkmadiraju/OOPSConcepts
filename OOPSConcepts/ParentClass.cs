@@ -5,10 +5,10 @@ using System.Text;
 
 namespace OOPSConcepts
 {
-    internal class ClassA
+    internal class ParentClass
     {
         static int a = 10;
-        public ClassA()
+        public ParentClass()
         {
             Console.WriteLine("Constructor of ClassA",a);
         }
@@ -19,27 +19,32 @@ namespace OOPSConcepts
         //{
         //    Console.WriteLine("Private Constructor of ClassA");
         //}
+        private ParentClass(int a, int b,int c)
+        {
+            Console.WriteLine("Private Constructor of ClassA with parameters: " + (a + b));
+            Console.WriteLine(a + b + c);
+        }
 
-        static ClassA()
+        static ParentClass()
         {
             int a = 1000;
             Console.WriteLine("Static Constructor of ClassA",a);
         }
-        public ClassA(int a, int b)
+        public ParentClass(int a, int b)
         {
             Console.WriteLine(a+b);
         }
     }
-    class ClassB: ClassA
+    class FirstChild: ParentClass
     {
-        public ClassB()
+        public FirstChild()
         {
             
         }
     }
-    class ClassC : ClassB
+    class SecondChild : FirstChild
     {
-        public ClassC()
+        public SecondChild()
         {
             
         }
