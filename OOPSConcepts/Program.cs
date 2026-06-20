@@ -44,7 +44,7 @@ namespace OOPSConcepts
             A a = new A();//a
             B b = new B(); //b
             A c = new B();//b
-            B d = (B)new A(); //Not Allowed //You need to cast the object of type A to type B explicitly,
+            //B d = (B)new A(); //Not Allowed //You need to cast the object of type A to type B explicitly,
                               //but this will throw an InvalidCastException at runtime because an instance of A cannot be cast to B.
             Console.WriteLine("Program finished.");
         }   
